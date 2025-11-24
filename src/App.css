@@ -1,0 +1,87 @@
+
+.send-button{
+  background-color:blueviolet;
+  color:white;
+  padding:12px 20px;
+  margin-left:10px;
+  border:none;
+  border-radius:10px;
+  font-size:15px;
+  cursor:pointer;
+}
+.chat-input{
+  padding:12px 15px;
+  border-radius:10px;
+  border-width:1px;
+  font-size:15px;
+  flex-grow:1;
+}
+.chat-input-container{
+  
+display:flex;
+margin:10px;
+margin-bottom:60px;
+/* flex: fixed; */
+}
+.chat-app{
+  max-width:600px;
+  margin-right:auto;
+  margin-left:auto;
+  height:100vh;
+    display:flex;
+  flex-direction:column;
+
+
+}
+.chat-user{
+  
+  display:flex;
+  justify-content:end;
+  align-items:start;
+  /* color:blanchedalmond; */
+ 
+}
+.chat-bot{
+  
+ display:flex;
+  justify-content:start;
+  align-items:start;
+  
+  
+  
+  
+}
+.message-container{
+  flex-grow:1;
+  margin-top:20px;
+  overflow:scroll;
+  scrollbar-width: none;
+  scroll-behavior: auto;
+}
+.message{
+  background-color:aliceblue;
+max-width:300px;
+  margin-bottom:20px;
+  border-radius:10px;
+  padding:15px 20px;
+  margin-right:10px;
+  margin-left:10px;
+  
+  
+
+
+}
+.bounce {
+ 
+  animation: softBounce 3s ease-in-out infinite;
+  filter: drop-shadow(0 6px 6px rgba(0,0,0,0.25));
+}
+
+@keyframes softBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);  /* smaller movement for subtle bounce */
+  }
+}
