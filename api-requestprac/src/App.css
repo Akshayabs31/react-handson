@@ -1,0 +1,115 @@
+/* ----------- Global Reset ----------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+/* Buttons inside table row */
+.action-buttons {
+  display: flex;
+  gap: 8px;     /* space between buttons */
+}
+
+
+/* ----------- Main App Container ----------- */
+.App {
+  min-height: 100vh;
+  background: #f5f6fa;
+  padding: 20px;
+}
+
+/* ----------- Header Styles ----------- */
+.app-header {
+  background: linear-gradient(135deg, #3949ab, #5c6bc0);
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ----------- Card Container ----------- */
+.data-card {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ----------- Table Styles ----------- */
+.bp4-html-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bp4-html-table th,
+.bp4-html-table td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 14px 10px;
+  text-align: left;
+}
+
+.bp4-html-table th {
+  background: #f0f0f7;
+  font-weight: 600;
+  color: #333;
+}
+
+.bp4-html-table tr:hover {
+  background: #fafafa;
+  transition: 0.2s;
+}
+
+/* ----------- Editable Field Styles ----------- */
+.bp4-editable-text,
+input.bp4-input {
+  font-size: 14px;
+}
+
+/* ----------- Buttons ----------- */
+.bp4-button {
+  border-radius: 6px !important;
+  padding: 6px 12px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+
+/* ----------- Footer Input Row ----------- */
+tfoot input {
+  width: 100%;
+}
+
+/* ----------- Responsive ----------- */
+@media (max-width: 768px) {
+  .data-card {
+    padding: 15px;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .bp4-html-table th,
+  .bp4-html-table td {
+    padding: 8px 4px;
+  }
+}
